@@ -1,5 +1,53 @@
-// Your SCSS variables and imports can go here
-// <uniquifier>: Use a unique and descriptive class name
+// Fonts //
+/* Open Sans */
+.open-sans-300 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans-400 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open-sans-700 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Josefin Sans */
+.josefin-sans-300 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.josefin-sans-400 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.josefin-sans-700 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+// General Styling //
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+}
 
 h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -10,51 +58,84 @@ h2 {
     padding: 0;
 }
 
-body {
-    font-family: "Open Sans";
-
+p {
+    margin: 0px;
+    line-height: 2.5rem;
 }
 
-// Header //
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0px auto;
+}
+
+/* Header */
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    border: 2px solid #274472;
-    padding: 10px;
 }
 
 #header-svg {
     justify-self: end;
     align-self: center;
     padding-right: 20px;
+    padding-top: 5px;
 }
 
 #header-img {
     align-self: center;
     justify-self: start;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 header img {
-    width: 70px
+    width: 70px;
 }
 
-// Main (4 Sections) //
+/* Main (4 Sections) */
+#section-1,
+#section-2,
+#section-4 {
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#section-3 {
+    display: grid;
+    justify-content: center;
+}
+
+#section-3 img {
+    width: 300px;
+    height: 300px;
+}
+
+#section-4 {
+    line-height: 1rem;
+}
 
 #socials {
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-template-rows: 1fr;
+    margin-top: 3rem;
 }
 
 .social-media-icon {
-    width: 25px;
+    width: 35px;
     height: auto;
     padding: 0 5px;
 }
 
-#section-3 img {
-    width: 250px;
-    height: 250px;
+// Footer //
+footer {
+    background-color: #333;
+    margin: 0px;
+    padding: 50px;
+    color: #fff;
 }
